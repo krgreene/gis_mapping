@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "cadetspace-1a06d"
+  },
+  "targets": {
+    "cadetspace-1a06d": {
+      "hosting": {
+        "map": [
+          "gismapping"
+        ]
+      }
+    }
+  }
+}
