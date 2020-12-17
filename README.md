@@ -1,4 +1,4 @@
-#6-Figure Grid Reference
+# 6-Figure Grid Reference
 
 This app provides the user with a 6-Fig Grid Referencce when the map is clicked.
 
