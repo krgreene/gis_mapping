@@ -37,10 +37,21 @@ export default function Map() {
         zoomOffset: -1,
         accessToken: 'pk.eyJ1Ijoid3JpdGUyayIsImEiOiJjazR4c2owa2owNDhwM2xtYm1obmVoMjNrIn0.sXOqGlRgdTmNV6nAlAX6WQ'
     })
+    
+    const hybrid = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        minZoom: 11,
+        id: 'mapbox/satellite-streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1Ijoid3JpdGUyayIsImEiOiJjazR4c2owa2owNDhwM2xtYm1obmVoMjNrIn0.sXOqGlRgdTmNV6nAlAX6WQ'
+    })
 
     const baseMaps = {
         "Streets": streets,
-        "Satellite": satellite
+        "Satellite": satellite,
+        "Hybrid": hybrid
     }
 
     const overlays = {
